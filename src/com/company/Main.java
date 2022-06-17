@@ -9,5 +9,8 @@ public class Main {
         var price = 14.99;
         var color = "Red";
 
+        var template = "Clothing item: %s, size: %s, price: $%.2f, color: %s";
+        var itemString = String.format(template, item, size, price, color);
+        System.out.println(itemString);
     }
 }
